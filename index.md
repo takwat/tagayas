@@ -62,9 +62,18 @@
 
 ---
 
+## 仮想化ソフトについて
+
+<p style="text-align: left;">今はVagrant+VirtualBoxがいい意味で枯れてるので個人的に気に入って使っていますが</p>
+<p style="text-align: left;">Windows 10ならWindows Subsystem for Linux(WSL)という面白そうな環境もあるので試してみるのもいいかもしれません</p>
+<p style="text-align: left;">次のWindows 10の大規模アップデートでMSが本気出して作ったLinuxカーネルでかなりパフォーマンスが上がったWSL2というのが入るとか入らないとか</p>
+<p style="text-align: left;">現状のWSL使ってみたときはファイルI/OとDocker周りのサポートが少し残念な感じになっていたのでWSL2には期待してます</p>
+
+---
+
 ### 仮想環境も解決できない辛み(1)
 
-<img src="./img/vboxsf.jpg" width="80%">
+<img src="img/vboxsf.jpg" width="80%">
 
 
 
@@ -72,13 +81,13 @@
 
 ### 仮想環境も解決できない辛み(2)
 
-<img src="./img/rsync.jpg" width="80%">
+<img src="img/rsync.jpg" width="80%">
 
 ---
 
-### Visual Studio Code + Remote Development Extension
+### Remote Development
 
-<img src="./img/remote.jpg" style="height: 100%; width: auto;">
+<img src="img/remote.jpg" width="80%">
 
 ---
 
@@ -92,31 +101,3 @@
 ---
 
 ## ngrok
-
-
-
-
-
----
-
-## ngrok
-
-
-
-
----
-
-## Second vertical
-
----
-
-## Third vertical
-
-***
-
-## Next horizontal
-
-
-***
-
-## Horiz
