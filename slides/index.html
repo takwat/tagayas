@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+
+<title>We Love Virtual Machines</title>
+
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="generator" content="reveal-ck 3.9.2">
+
+
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+<!-- Code syntax highlighting -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+
+<link rel="stylesheet" href="css/reveal-ck.css">
+
+
+<!-- Printing and PDF exports -->
+<script>
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+
+  </head>
+
+  <body>
+    <div class="reveal">
+  <!-- Any section element inside of this container is displayed as a slide -->
+  <div class="slides">
+    <section>
+
+<h1>We Love Virtual Machines</h1>
+<p>仮想環境をより便利に使うツールたち</p>
+
+</section>
+<section>
+
+<h2>自己紹介</h2>
+
+</section>
+<section>
+
+<h2>仮想環境使ってますか？</h2>
+
+</section>
+<section>
+
+<h2>よくあるWeb開発の形</h2>
+
+<ul>
+  <li>サーバはたぶんLinuxかFreeBSDなどの*nix系</li>
+  <li>開発者にあてがわれているのはWindowsがインストールされたPC</li>
+  <li>たまにMac</li>
+</ul>
+
+</section>
+<section>
+
+<h2>ひと昔前だと</h2>
+
+<ul>
+  <li>開発中の確認用に本番用とは別のサーバを借りてアップロード</li>
+  <li>アップロードが面倒なので社内にサーバをたててSambaとかでネットワークドライブにしたり</li>
+</ul>
+
+</section>
+<section>
+
+<h2>構築が面倒</h2>
+<h2>アップロードが面倒</h2>
+<h2>共用なのでデグレがこわい</h2>
+
+</section>
+<section>
+
+<h2>今</h2>
+
+<p>てもとのマシンに仮想環境で物理サーバのような環境を作ってそこで開発</p>
+
+</section>
+<section>
+
+<h3>背景は技術の進歩と<br>「人権意識」の高まり</h3>
+
+<ul>
+  <li>ハードウェアによる仮想化支援をサポートしたマルチコア・マルチスレッドなCPU</li>
+  <li>SSDの普及(I/O周りのボトルネック解消)</li>
+  <li>割と豊富なメモリ</li>
+</ul>
+
+</section>
+<section>
+
+<h3>Vagrant + VirtualBox</h3>
+<ul>
+  <li>豊富なテンプレート(box) <!-- .element: class="fragment" data-fragment-index="1" -->
+</li>
+  <li>プロビジョニングによるカスタマイズの自動化 <!-- .element: class="fragment" data-fragment-index="2" -->
+</li>
+  <li>設定やプロビジョニング関連ファイルは基本テキスト <!-- .element: class="fragment" data-fragment-index="3" -->
+    <ul>
+      <li>gitで管理してればどこでも同じ環境を作れる <!-- .element: class="fragment" data-fragment-index="4" -->
+</li>
+      <li>「秘伝のタレ」を回避できる <!-- .element: class="fragment" data-fragment-index="5" -->
+</li>
+    </ul>
+  </li>
+  <li>手軽に作れて手軽に壊せるのは初期の試行錯誤には大きなメリット <!-- .element: class="fragment" data-fragment-index="6" -->
+</li>
+</ul>
+
+</section>
+<section>
+
+<h3>例</h3>
+
+<p><a href="https://github.com/takwat/vagrant-lamp">https://github.com/takwat/vagrant-lamp</a></p>
+
+</section>
+<section>
+
+<h3>仮想環境も解決できない辛み(1)</h3>
+
+<p><img src="./img/vboxsf.jpg" width="80%"></p>
+
+</section>
+<section>
+
+<h3>仮想環境も解決できない辛み(2)</h3>
+
+<p><img src="./img/rsync.jpg" width="80%"></p>
+
+</section>
+<section>
+
+<h3>Visual Studio Code + Remote Development Extension</h3>
+
+<p><img src="./img/remote.jpg" height="100%"></p>
+
+</section>
+<section>
+
+<ul>
+  <li>エディタのUI部分だけホスト(Windows/Mac)側で動いてますという形</li>
+  <li>編集対象はゲスト側のローカルファイル</li>
+  <li>gitやPHPの実行エンジン(XDebug含む)などはゲスト側で動いているものを使う
+    <ul>
+      <li>ホスト側にはVirtualBox / Vagrant / VSCode関連以外の開発ツールは一切インストール不要</li>
+    </ul>
+  </li>
+  <li>実行・停止の指令と動作状態のモニタリングをサーバ側にインストールされたnode.js製のプラグインなどで行ってホスト側に転送
+    <ul>
+      <li>SSHぶんのオーバーヘッドはあるもののそこまで気にならない</li>
+    </ul>
+  </li>
+</ul>
+
+</section>
+<section>
+
+</section>
+<section>
+<section>
+
+<h2>This is first vertical</h2>
+
+</section>
+<section>
+
+<h2>Second vertical</h2>
+
+</section>
+<section>
+
+<h2>Third vertical</h2>
+
+</section>
+</section>
+<section>
+
+<h2>Next horizontal</h2>
+
+</section>
+<section>
+<section>
+
+<h2>Horiz</h2>
+
+</section>
+</section>
+
+  </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+
+<script>
+  (function() {
+  function extend( a, b ) {
+    for(var i in b) {
+      a[i] = b[i];
+    }
+  }
+  var baseOptions = {
+    transition: 'default',
+
+    dependencies: [
+      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/zoom-js/zoom.js', async: true },
+      { src: 'plugin/notes/notes.js', async: true }
+    ]
+  };
+
+  
+
+  var configOptions = {"controls":true,"progress":true,"history":true,"center":true}
+  var initializeOptions = {};
+  extend(initializeOptions, baseOptions);
+  extend(initializeOptions, configOptions);
+  Reveal.initialize(initializeOptions);
+})();
+
+</script>
+
+  </body>
+</html>
