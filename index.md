@@ -17,34 +17,40 @@
 
 ---
 
-## マシン代と電気代でお財布に優しくない <!-- .element: class="fragment" data-fragment-index="1" -->
-## 構築が面倒 <!-- .element: class="fragment" data-fragment-index="2" -->
-## 複数人で共用してるとデグレがこわい <!-- .element: class="fragment" data-fragment-index="3" -->
+## 今にして思えば
+### マシン代と電気代でお財布に優しくない <!-- .element: class="fragment" data-fragment-index="1" -->
+### 構築が面倒 <!-- .element: class="fragment" data-fragment-index="2" -->
+### 複数人で共用してるとデグレがこわい <!-- .element: class="fragment" data-fragment-index="3" -->
 
-<aside class="note">
+<aside class="notes">
 SubversionやGitで管理してても、Gitが使えない人は何も考えずにファイルを上げる
 </aside>
 
 ---
 
-### 時代は変わった
+## 時代は変わった
 
-- CPUの仮想化支援と多コア多スレッド化 <!-- .element: class="fragment" data-fragment-index="1" -->
-- SSDやメモリの大容量化と価格低下 <!-- .element: class="fragment" data-fragment-index="2" -->
+### CPUの仮想化支援と多コア多スレッド化 <!-- .element: class="fragment" data-fragment-index="1" -->
+### SSDやメモリの大容量化と価格低下 <!-- .element: class="fragment" data-fragment-index="2" -->
 
-<aside class="note">
+<aside class="notes">
 仮想化支援機能のついたマルチコアCPU、メモリ8GBぐらいは最低限の人権だと思っています
 </aside>
 
 ---
 
 ### 仮想化環境下での開発のメリット
-- 豊富なテンプレート <!-- .element: class="fragment" data-fragment-index="1" -->
-- プロビジョニングによるカスタマイズの自動化 <!-- .element: class="fragment" data-fragment-index="2" -->
-- 設定やプロビジョニング関連ファイルは基本テキスト <!-- .element: class="fragment" data-fragment-index="3" -->
-  - gitで管理してればどこでも同じ環境を作れる <!-- .element: class="fragment" data-fragment-index="4" -->
-  - 「秘伝のタレ」を回避できる <!-- .element: class="fragment" data-fragment-index="5" -->
-- 手軽に作れて手軽に壊せるのは初期の試行錯誤には大きなメリット <!-- .element: class="fragment" data-fragment-index="6" -->
+
+<ul>
+    <li class="fragment" data-fragment-index="1">豊富なテンプレート</li>
+    <li class="fragment" data-fragment-index="2">プロビジョニングによるカスタマイズの自動化</li>
+    <ul>
+        <li class="fragment" data-fragment-index="3">設定やプロビジョニング関連ファイルは基本テキスト</li>
+        <li class="fragment" data-fragment-index="4">gitで管理してれば<span style="color: red; font-size: 1.2em; font-weight: bold;">どこでも同じ環境を作れる</span></li>
+        <li class="fragment" data-fragment-index="5"><span style="color: red; font-size: 1.2em; font-weight: bold;">秘伝のタレ</span>を回避できる</li>
+    </ul>
+    <li class="fragment" data-fragment-index="6"><span style="color: cyan;">手軽に作れて手軽に壊せる</span>のは初期の試行錯誤には大きなメリット</li>
+</ul>
 
 ---
 
@@ -58,7 +64,7 @@ SubversionやGitで管理してても、Gitが使えない人は何も考えず�
 ### WSL(Windows Subsystem for Linux)
 - 起動が早くWindowsのアプリ感覚でUbuntuが立ち上がるのは楽しい <!-- .element: class="fragment" data-fragment-index="1" -->
 - でも現状では結構残念ポイントが多い <!-- .element: class="fragment" data-fragment-index="2" -->
-- 次期Windows 10の大規模アップデートでMSが本気を出して作ったLinuxカーネルに乗る <!-- .element: class="fragment" data-fragment-index="3" -->
+- 次期Windows 10の大規模アップデートでMSが本気を出して作ったLinuxカーネルが登場予定 <!-- .element: class="fragment" data-fragment-index="3" -->
 - かなりパフォーマンスが上がって残念ポイントが解決されているらしい <!-- .element: class="fragment" data-fragment-index="4" -->
 
 ---
@@ -67,7 +73,7 @@ SubversionやGitで管理してても、Gitが使えない人は何も考えず�
 
 <img src="img/rsync.jpg" class="stretch">
 
-<aside class="note">
+<aside class="notes">
 ホスト側とゲスト側で同じ環境を2つも揃えないといけないのが辛い
 </aside>
 
@@ -77,7 +83,7 @@ SubversionやGitで管理してても、Gitが使えない人は何も考えず�
 
 <img src="img/vboxsf.jpg" class="stretch">
 
-<aside class="note">
+<aside class="notes">
 ホスト側からいじるファイルとゲストから参照するファイルが一元化はされたもののvboxsfの場合は参照が遅い
 それでいてホスト環境にもPHPを入れないとだめというのは解決されず
 </aside>
@@ -88,7 +94,7 @@ SubversionやGitで管理してても、Gitが使えない人は何も考えず�
 
 <img src="img/remote.jpg" class="stretch">
 
-<aside class="note">
+<aside class="notes">
 - エディタのUI部分だけホスト(Windows/Mac)側で動いてますという形
 - 編集対象はゲスト側のローカルファイル
 - gitやPHPの実行エンジン(XDebug含む)などはゲスト側で動いているものを使う
