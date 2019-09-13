@@ -7,9 +7,9 @@
 
 <ul>
     <li class="fragment" data-fragment-index="1">0x2c歳</li>
-    <li class="fragment" data-fragment-index="2">入社3ヶ月目</li>
-    <li class="fragment" data-fragment-index="3">サーバサイドメイン</li>
-    <li class="fragment" data-fragment-index="4">これまで発表された皆さんのような立派なことは発表できません</li>
+    <li class="fragment" data-fragment-index="2">サーバサイドメイン</li>
+    <li class="fragment" data-fragment-index="3">入社3ヶ月目のペーペーです</li>
+    <li class="fragment" data-fragment-index="4">ゆえにこれまで発表された皆さんのような立派なことは言えません</li>
 </ul>
 
 ---
@@ -162,6 +162,7 @@
 <ul>
     <li>有料プランじゃないとすぐ1分あたりのリクエスト数の上限に引っかかる</li>
     <li class="fragment" data-fragment-index="1">APIなどのテスト向きかも</li>
+    <li class="fragment" data-fragment-index="2">Vagrantにあるshareというプラグインも裏側でこれ使ってます</li>
 </ul>
 
 ---
@@ -198,9 +199,8 @@ https://localtunnel.github.io/www/
 
 ## まとめ
 
-
-
-
-
-
-
+<ul>
+    <li class="fragment" data-fragment-index="1">仮想環境はいいもの</li>
+    <li class="fragment" data-fragment-index="2">VSCodeで仮想環境いじるならRemote Developmentは入れといたほうが幸せ</li>
+    <li class="fragment" data-fragment-index="3">開発ツールでWindowsやmacのローカル環境汚さないのは安心</li>
+</ul>
