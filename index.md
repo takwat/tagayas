@@ -5,27 +5,18 @@
 
 ## 自己紹介
 
-- 渡邊 崇 <!-- .element: class="fragment" data-fragment-index="1" -->
-- 0x2c歳 <!-- .element: class="fragment" data-fragment-index="2" -->
-- 入社3ヶ月目 <!-- .element: class="fragment" data-fragment-index="3" -->
-- 社内部活動 Qiita部所属 <!-- .element: class="fragment" data-fragment-index="4" -->
-- https://qiita.com/_takwat/ <!-- .element: class="fragment" data-fragment-index="5" -->
+<ul>
+    <li class="fragment" data-fragment-index="1">0x2c歳</li>
+    <li class="fragment" data-fragment-index="2">入社3ヶ月目</li>
+    <li class="fragment" data-fragment-index="3">他の皆さんのような立派なことは発表できません</li>
+</ul>
 
 ---
 
 ## ここからの予定
 
----
-
-### ぜひしたい話
 - VSCode Remote Development <!-- .element: class="fragment" data-fragment-index="1" -->
 - ngrok <!-- .element: class="fragment" data-fragment-index="2" -->
-
----
-
-### 時間が余れば
-- 色んな辛み <!-- .element: class="fragment" data-fragment-index="1" -->
-- ngrokのようなサービス <!-- .element: class="fragment" data-fragment-index="2" -->
 
 ---
 
@@ -42,14 +33,9 @@
 ### 構築の手間 <!-- .element: class="fragment" data-fragment-index="2" -->
 ### 複数人で共用してるがゆえの上書きによるデグレの手戻り <!-- .element: class="fragment" data-fragment-index="3" -->
 
-<p style="line-height: 1.2em;"> </p>
+<p style="line-height: 2.0rem;">&nbsp;</p>
 
 ## お財布に優しくない <!-- .element: class="fragment" data-fragment-index="4" -->
-
-
-<aside class="notes">
-SubversionやGitで管理してても、Gitが使えない人は何も考えずにファイルを上げる
-</aside>
 
 ---
 
@@ -57,10 +43,6 @@ SubversionやGitで管理してても、Gitが使えない人は何も考えず�
 
 ### CPUの仮想化支援と多コア多スレッド化 <!-- .element: class="fragment" data-fragment-index="1" -->
 ### SSDやメモリの大容量化と価格低下 <!-- .element: class="fragment" data-fragment-index="2" -->
-
-<aside class="notes">
-仮想化支援機能のついたマルチコアCPU、メモリ8GBぐらいは最低限の人権だと思っています
-</aside>
 
 ---
 
@@ -98,28 +80,19 @@ SubversionやGitで管理してても、Gitが使えない人は何も考えず�
 
 ---
 
-### 仮想環境も解決できない辛み(1)
+### 仮想環境で直面する辛み(1)
 
 ---
 
 <img src="img/rsync.jpg">
 
-<aside class="notes">
-ホスト側とゲスト側で同じ環境を2つも揃えないといけないのが辛い
-</aside>
-
 ---
 
-### 仮想環境も解決できない辛み(2)
+### 仮想環境で直面する辛み(2)
 
 ---
 
 <img src="img/vboxsf.jpg">
-
-<aside class="notes">
-ホスト側からいじるファイルとゲストから参照するファイルが一元化はされたもののvboxsfの場合は参照が遅い
-それでいてホスト環境にもPHPを入れないとだめというのは解決されず
-</aside>
 
 ---
 
@@ -127,7 +100,7 @@ SubversionやGitで管理してても、Gitが使えない人は何も考えず�
 
 ---
 
-<img src="/img/remote.jpg">
+<img src="img/remote.jpg">
 
 <aside class="notes">
 - エディタのUI部分だけホスト(Windows/Mac)側で動いてますという形
@@ -140,7 +113,7 @@ SubversionやGitで管理してても、Gitが使えない人は何も考えず�
 
 ---
 
-## てもとのマシンで開発してたある日
+## てもとの仮想環境で開発してたある日
 
 ---
 
@@ -160,7 +133,7 @@ SubversionやGitで管理してても、Gitが使えない人は何も考えず�
 
 ---
 
-<img src="/img/ngrok7.jpg">
+<img src="img/ngrok7.jpg">
 
 ---
 
@@ -168,5 +141,46 @@ SubversionやGitで管理してても、Gitが使えない人は何も考えず�
 
 <ul>
     <li>有料プランじゃないとすぐ1分あたりのリクエスト数の上限に引っかかる</li>
-    <li class="fragment" data-fragment-index="1">画像などのアセットの少ないAPIなどのテスト向きかも</li>
+    <li class="fragment" data-fragment-index="1">APIなどのテスト向きかも</li>
 </ul>
+
+---
+
+## 似たようなサービス
+
+---
+
+### serveo
+
+https://serveo.net/
+
+---
+
+<ul>
+    <li>サービスがたまに落ちてる</li>
+    <li class="fragment" data-fragment-index="1"><span style="font-weight: bold; font-size: 1.2em; color: cyan;">自鯖・自ドメインで環境作れる</span></li>
+</ul>
+
+---
+
+### Localtunnel
+
+https://localtunnel.github.io/www/
+
+---
+
+<ul>
+    <li>npm installなのでクライアントのインストールが楽</li>
+    <li class="fragment" data-fragment-index="1">若干パフォーマンスが不安</li>
+</ul>
+
+---
+
+## まとめ
+
+
+
+
+
+
+
