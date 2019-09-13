@@ -204,3 +204,7 @@ https://localtunnel.github.io/www/
     <li class="fragment" data-fragment-index="2">VSCodeで仮想環境いじるならRemote Developmentは入れといたほうが幸せ</li>
     <li class="fragment" data-fragment-index="3">開発ツールでWindowsやmacのローカル環境汚さないのは安心</li>
 </ul>
+
+---
+
+# ありがとうございました
