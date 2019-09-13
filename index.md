@@ -137,6 +137,11 @@
 
 ---
 
+<img src="https://omoganews.com/wp-content/uploads/2018/08/67476-0-x-1200x630.jpg" width="100%">
+
+
+---
+
 ## 動いてること見せてもらえない？
 
 ---
