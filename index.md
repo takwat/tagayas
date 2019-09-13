@@ -3,12 +3,31 @@
 
 ---
 
-## 自己紹介
+## 自己紹介(1)
 
 <ul>
     <li class="fragment" data-fragment-index="1">0x2c歳</li>
     <li class="fragment" data-fragment-index="2">入社3ヶ月目</li>
-    <li class="fragment" data-fragment-index="3">他の皆さんのような立派なことは発表できません</li>
+    <li class="fragment" data-fragment-index="3">前の皆さんのような立派なことは発表できません</li>
+</ul>
+
+---
+
+## 自己紹介(2)
+### I Like ...
+<ul>
+    <li class="fragment" data-fragment-index="2">Slim Framework</li>
+    <li class="fragment" data-fragment-index="3">Vue.js</li>
+    <li class="fragment" data-fragment-index="4">Vagrant</li>
+    <li class="fragment" data-fragment-index="5">Firebase</li>
+    <li class="fragment" data-fragment-index="6">MongoDB</li>
+    <li class="fragment" data-fragment-index="7">ELK Stack</li>
+</ul>
+
+### And ...  <!-- .element: class="fragment" data-fragment-index="8" -->
+
+<ul>
+    <li class="fragment" data-fragment-index="9">Visual Studio Code</li>
 </ul>
 
 ---
