@@ -195,13 +195,28 @@ https://localtunnel.github.io/www/
 
 ---
 
-## 余談
+### 余談(1) 闇
+
+https://qiita.com/_takwat/items/3a121656425fac7bb820
+
+<aside class="notes">
+最近停滞気味なんですが昔からQiitaにちょこちょこと記事を書いていました<br>
+その中での一番人気が非常にダークサイド
+</aside>
 
 ---
 
-### KEN_ALL.csvの闇は深い
+## 余談(2) 違和感
 
-https://qiita.com/_takwat/items/3a121656425fac7bb820
+<aside class="notes">
+今日の他の皆さんの発表ですが、業務上での素晴らしい体験談がベースになっていますが<br>
+私、実は7月入社でまだ3ヶ月目<br>
+その場のノリで引き受けはしたもののタイトルどおりの業務がらみのネタがなかったので<br>
+トリにもかかわらず持ちネタ発表になってしまいましたことをお詫びしつつ今回はここまで
+</aside>
+
+# 3ヶ月 <!-- .element: class="fragment" data-fragment-index="1" -->
+### ぶっちゃけネタのストックがない <!-- .element: class="fragment" data-fragment-index="2" -->
 
 ---
 
