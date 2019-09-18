@@ -7,9 +7,8 @@
 
 <ul>
     <li class="fragment" data-fragment-index="1">0x2c歳</li>
-    <li class="fragment" data-fragment-index="2">サーバサイドメイン</li>
-    <li class="fragment" data-fragment-index="3">入社3ヶ月目のペーペーです</li>
-    <li class="fragment" data-fragment-index="4">ゆえにこれまで発表された皆さんのような立派なことは言えません</li>
+    <li class="fragment" data-fragment-index="2">https://qiita.com/_takwat/</li>
+    <li class="fragment" data-fragment-index="3">https://github.com/takwat/</li>
 </ul>
 
 ---
@@ -18,57 +17,33 @@
 ### I Like ...
 <ul>
     <li class="fragment" data-fragment-index="1">Slim Framework</li>
-    <li class="fragment" data-fragment-index="2">Vue.js</li>
-    <li class="fragment" data-fragment-index="3">Vagrant</li>
-    <li class="fragment" data-fragment-index="4">Firebase</li>
-    <li class="fragment" data-fragment-index="5">MongoDB</li>
-    <li class="fragment" data-fragment-index="6">ELK Stack</li>
+    <li class="fragment" data-fragment-index="2">Laravel</li>
+    <li class="fragment" data-fragment-index="3">Vue.js</li>
+    <li class="fragment" data-fragment-index="4">Vagrant</li>
+    <li class="fragment" data-fragment-index="5">Firebase</li>
+    <li class="fragment" data-fragment-index="6">MongoDB</li>
+    <li class="fragment" data-fragment-index="7">ELK Stack</li>
 </ul>
 
 ### And ...  <!-- .element: class="fragment" data-fragment-index="7" -->
 
-<ul>
-    <li class="fragment" data-fragment-index="8">Visual Studio Code</li>
-</ul>
+<h3 class="fragment" data-fragment-index="8"><img src="img/vscode.png" style="width: auto; height: 1em; border: none; vertical-align: middle;">&nbsp;Visual Studio Code</h3>
 
 ---
 
 ## ここからの予定
 
-- VSCode Remote Development <!-- .element: class="fragment" data-fragment-index="1" -->
-- ngrok <!-- .element: class="fragment" data-fragment-index="2" -->
+### 仮想環境の話 <!-- .element: class="fragment" data-fragment-index="1" -->
+### VSCode Remote Development <!-- .element: class="fragment" data-fragment-index="2" -->
+### トンネリングサービス <!-- .element: class="fragment" data-fragment-index="3" -->
 
 ---
 
-## ひと昔前のWeb開発あるある
-
-#### 開発中の確認用に本番用やステージング用とは <!-- .element: class="fragment" data-fragment-index="1" -->
-### <span class="fragment" style="color: red; font-size: 1.2em; font-weight: bold;" data-fragment-index="2">別のサーバをたてて</span>
-### アップロード <!-- .element: class="fragment" data-fragment-index="3" -->
-
----
-
-## 今にして思えば
-### マシン代と電気代 <!-- .element: class="fragment" data-fragment-index="1" -->
-### 構築の手間 <!-- .element: class="fragment" data-fragment-index="2" -->
-### 複数人で共用してるがゆえの上書きによるデグレの手戻り <!-- .element: class="fragment" data-fragment-index="3" -->
-
-<p style="line-height: 2.0rem;">&nbsp;</p>
-
-## お財布に優しくない <!-- .element: class="fragment" data-fragment-index="4" -->
-
----
-
-## 時代は変わり
+## 開発環境も仮想化の時代
 
 ### CPUの仮想化支援と多コア多スレッド化 <!-- .element: class="fragment" data-fragment-index="1" -->
 ### SSDやメモリの大容量化と価格低下 <!-- .element: class="fragment" data-fragment-index="2" -->
-
----
-
-## つまり
-
-### てもとのパソコンで仮想環境作っても辛くない <!-- .element: class="fragment" data-fragment-index="2" -->
+### 人権が守られている開発環境なら仮想マシンを1台ぐらい飼ってもあまり辛くない <!-- .element: class="fragment" data-fragment-index="3" -->
 
 ---
 
@@ -78,29 +53,18 @@
     <li class="fragment" data-fragment-index="1"><span style="color: red; font-size: 1.2em; font-weight: bold;">秘伝のタレ</span>の防止</li>
     <ul>
         <li class="fragment" data-fragment-index="2">プロビジョニングによるカスタマイズの自動化</li>
-        <li class="fragment" data-fragment-index="4">gitで管理してれば<span style="color: red; font-size: 1.2em; font-weight: bold;">どこでも同じ環境を作れる</span></li>
+        <li class="fragment" data-fragment-index="3">↑の設定ファイルはテキストなので、gitなどで管理していれば<span style="color: red; font-size: 1.2em; font-weight: bold;">開発者同士で同じ環境を共有できる</span></li>
     </ul>
-    <li class="fragment" data-fragment-index="6"><span style="color: cyan;">手軽に作れて手軽に壊せる</span>のは初期の試行錯誤には大きなメリット</li>
+    <li class="fragment" data-fragment-index="4"><span style="color: cyan;">手軽に作れて手軽に壊せる</span></li>
 </ul>
 
 ---
 
-### 例
-
-[https://github.com/takwat/vagrant-lamp](https://github.com/takwat/vagrant-lamp)
+## ただし「銀の弾丸」ではない
 
 ---
 
-## 個人的に注目の仮想化ソフト
-### WSL(Windows Subsystem for Linux)
-- 起動が早くWindowsのアプリ感覚でUbuntuが立ち上がるのは楽しい <!-- .element: class="fragment" data-fragment-index="1" -->
-- でも現状では結構残念ポイントが多い <!-- .element: class="fragment" data-fragment-index="2" -->
-- 次期Windows 10の大規模アップデートでMSが本気を出して作ったLinuxカーネルが登場予定 <!-- .element: class="fragment" data-fragment-index="3" -->
-- かなりパフォーマンスが上がって残念ポイントが解決されているらしい <!-- .element: class="fragment" data-fragment-index="4" -->
-
----
-
-### 仮想環境で直面する辛み(1)
+### 直面する辛み(1)
 
 ---
 
@@ -108,7 +72,7 @@
 
 ---
 
-### 仮想環境で直面する辛み(2)
+### 直面する辛み(2)
 
 ---
 
@@ -116,7 +80,13 @@
 
 ---
 
-### VSCode Remote Development Extension
+## 辛みの根本
+### ホスト側とゲスト側とのファイルや環境の整合性の同期
+### 二重管理の煩さしさ <!-- .element: class="fragment" data-fragment-index="1" -->
+
+---
+
+# VSCode Remote Development Extension
 
 ---
 
@@ -133,28 +103,35 @@
 
 ---
 
+# トンネリングサービスの話
+
+---
+
 ## てもとの仮想環境で開発してたある日
 
----
-
-<img src="https://omoganews.com/wp-content/uploads/2018/08/67476-0-x-1200x630.jpg" width="100%">
-
+<img src="https://omoganews.com/wp-content/uploads/2018/08/67476-0-x-1200x630.jpg" width="80%">
 
 ---
 
-## 動いてること見せてもらえない？
+# &#x1f47c;&nbsp;動いてること見たいなあ
 
 ---
 
-## どっかにデプロイする？
+# &#x1f641;
 
 ---
 
-## ぶっちゃけ面倒('A`)
+## どこかにデプロイするの面倒&#x1f630;
 
 ---
 
-## ngrok
+## APIのコールバックとかだとSSL対応もしないと辛い&#x1f914;
+
+---
+
+## ngrok 降臨
+
+<img src="img/ngrok.png">
 
 ---
 
@@ -165,7 +142,7 @@
 ## ただし
 
 <ul>
-    <li>有料プランじゃないとすぐ1分あたりのリクエスト数の上限に引っかかる</li>
+    <li>有料プランじゃないとすぐ1分あたりのリクエスト数の上限に引っかかる&#x1f631;</li>
     <li class="fragment" data-fragment-index="1">APIなどのテスト向きかも</li>
     <li class="fragment" data-fragment-index="2">Vagrantにあるshareというプラグインも裏側でこれ使ってます</li>
 </ul>
@@ -183,8 +160,9 @@ https://serveo.net/
 ---
 
 <ul>
-    <li>サービスがたまに落ちてる</li>
+    <li>サービスがたまに落ちてる&#x1f607;</li>
     <li class="fragment" data-fragment-index="1"><span style="font-weight: bold; font-size: 1.2em; color: cyan;">自鯖・自ドメインで環境作れる</span></li>
+    <li class="fragment" data-fragment-index="2"><span style="font-weight: bold; font-size: 1.2em; color: cyan;">ただのトンネルなのでどこかの安鯖にたててもいいかもしれない</span></li>
 </ul>
 
 ---
@@ -197,7 +175,8 @@ https://localtunnel.github.io/www/
 
 <ul>
     <li>npm installなのでクライアントのインストールが楽</li>
-    <li class="fragment" data-fragment-index="1">若干パフォーマンスが不安</li>
+    <li class="fragment" data-fragment-index="1"><span style="font-weight: bold; font-size: 1.2em; color: cyan;">自鯖・自ドメインで環境作れる</span></li>
+    <li class="fragment" data-fragment-index="2">若干パフォーマンスが不安</li>
 </ul>
 
 ---
@@ -205,11 +184,27 @@ https://localtunnel.github.io/www/
 ## まとめ
 
 <ul>
-    <li class="fragment" data-fragment-index="1">仮想環境はいいもの</li>
-    <li class="fragment" data-fragment-index="2">VSCodeで仮想環境いじるならRemote Developmentは入れといたほうが幸せ</li>
-    <li class="fragment" data-fragment-index="3">開発ツールでWindowsやmacのローカル環境汚さないのは安心</li>
+    <li class="fragment" data-fragment-index="1">開発環境と普段使いの環境の隔離</li>
+    <li class="fragment" data-fragment-index="2">VSCode使いならRemote Developmentは入れといたほうが幸せ</li>
+    <li class="fragment" data-fragment-index="3">簡易的ではあるものの仮想環境をグローバルに晒す手段もあるので用法容量をよく守ってお使いください</li>
 </ul>
 
 ---
 
+# 本題終わり
+
+---
+
+## 余談
+
+---
+
+### KEN_ALL.csvの闇は深い
+
+https://qiita.com/_takwat/items/3a121656425fac7bb820
+
+---
+
 # ありがとうございました
+#### 資料
+https://takwat.github.io/tagayas/
