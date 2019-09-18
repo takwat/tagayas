@@ -43,7 +43,7 @@
 
 ### CPUの仮想化支援と多コア多スレッド化 <!-- .element: class="fragment" data-fragment-index="1" -->
 ### SSDやメモリの大容量化と価格低下 <!-- .element: class="fragment" data-fragment-index="2" -->
-### 人権が守られている開発環境なら仮想マシンを1台ぐらい飼ってもあまり辛くない <!-- .element: class="fragment" data-fragment-index="3" -->
+### 今時の基本的人権が守られている開発環境なら仮想マシンを1台ぐらい飼ってもあまり辛くない <!-- .element: class="fragment" data-fragment-index="3" -->
 
 ---
 
